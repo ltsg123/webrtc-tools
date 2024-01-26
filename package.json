@@ -1,0 +1,39 @@
+{
+  "name": "webrtc-tools",
+  "private": true,
+  "version": "0.0.0",
+  "author": {
+    "name": "xsm",
+    "email": "ltsg0317@outlook.com"
+  },
+  "keywords": [
+    "WebRTC",
+    "tools"
+  ],
+  "repository": {
+    "type": "github",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "description": "WebRTC tools",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc && tsx ./scripts/build-api.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "terser": "5.16.3",
+    "@microsoft/api-extractor": "^7.36.0",
+    "@types/node": "^18.16.0",
+    "tsx": "^3.12.7"
+  }
+}
