@@ -26,7 +26,7 @@
   "scripts": {
     "dev": "vite",
     "build": "yarn build-api && yarn build-example",
-    "build-api": "vite build && tsc && tsx ./scripts/build-api.ts",
+    "build-api": "vite build && tsc && tsx ./scripts/build-api.ts && cp -r ./img ./dist/",
     "build-example": "vite build --config example_vite.config.ts "
   },
   "dependencies": {},
