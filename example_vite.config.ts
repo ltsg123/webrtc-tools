@@ -4,24 +4,20 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "./",
   plugins: [],
+  envDir: "dev/main.ts",
   build: {
-    copyPublicDir: false,
     minify: "terser",
     lib: {
       name: pkg.name,
       fileName: (format) => {
         if (format === "umd") {
           return "index.js";
-        } else if (format === "es") {
-          return "index.esm.js";
         }
       },
-      entry: "src/index.ts",
-      formats: ["umd", "es"],
+      entry: "dev/index.ts",
+      formats: ["umd"],
     },
+    outDir: "example",
     sourcemap: false,
-  },
-  server: {
-    port: 5173,
   },
 });

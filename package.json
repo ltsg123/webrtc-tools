@@ -12,12 +12,12 @@
   ],
   "repository": {
     "type": "github",
-    "url": ""
+    "url": "https://github.com/ltsg123/webrtc-tools"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/ltsg123/webrtc-tools/issues"
   },
-  "homepage": "",
+  "homepage": "https://ltsg123.github.io/webrtc-tools",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -25,7 +25,9 @@
   "description": "WebRTC tools",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc && tsx ./scripts/build-api.ts"
+    "build": "yarn build-api && yarn build-example",
+    "build-api": "vite build && tsc && tsx ./scripts/build-api.ts",
+    "build-example": "vite build --config example_vite.config.ts "
   },
   "dependencies": {},
   "devDependencies": {

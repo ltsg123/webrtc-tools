@@ -3,7 +3,7 @@ import { createTimeline } from "../src";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
-    <h1>Vite + TypeScript</h1>
+    <h1>WebRTC - Tools</h1>
     <canvas id="test-canvas" width="700" height="400"></canvas>
 
   </div>
