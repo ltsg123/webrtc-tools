@@ -1,7 +1,7 @@
 {
   "name": "webrtc-tools",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": {
     "name": "xsm",
     "email": "ltsg0317@outlook.com"
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/ltsg123/webrtc-tools/issues"
   },
-  "homepage": "https://ltsg123.github.io/webrtc-tools",
+  "homepage": "https://ltsg123.github.io/webrtc-tools/example/",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

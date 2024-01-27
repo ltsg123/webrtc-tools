@@ -59,6 +59,10 @@ function generateReadme() {
     resolve(__dirname, "../README.md"),
     resolve(__dirname, "../dist/README.md")
   );
+  copyFileSync(
+    resolve(__dirname, "../README-zh_CN.md"),
+    resolve(__dirname, "../dist/README-zh_CN.md")
+  );
 }
 
 void generateApiDeclaration();

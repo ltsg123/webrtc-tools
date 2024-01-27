@@ -1,0 +1,27 @@
+{
+	"name": "webrtc-tools",
+	"version": "1.0.0",
+	"description": "WebRTC tools",
+	"main": "index.js",
+	"module": "index.esm.js",
+	"types": "index.d.ts",
+	"declaration": true,
+	"author": {
+		"name": "xsm",
+		"email": "ltsg0317@outlook.com"
+	},
+	"keywords": [
+		"WebRTC",
+		"tools"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/ltsg123/webrtc-tools"
+	},
+	"bugs": {
+		"url": "https://github.com/ltsg123/webrtc-tools/issues"
+	},
+	"homepage": "https://ltsg123.github.io/webrtc-tools/example/",
+	"dependencies": {}
+}
