@@ -22,6 +22,29 @@ CDN is also provided
 Example image:
 ![](./img/test.png)
 
+## Using
+
+```ts
+import { createTimeline } from "webrtc-tools";
+const options = {
+  // View Update Interval
+  scale: 100,
+  // Bottom Timeline Interval
+  timeStep: 10 * 1000,
+};
+
+// create a timeline graph
+const graph = createTimeline("key", "canvasId", options);
+
+// set boundaries
+graph.setBoundaries("up", 500, "blue");
+
+// add graph point
+setInterval(() => {
+  graph.addGraphPoint(Math.random() * 1000);
+}, 1000 / 30);
+```
+
 ## build
 
 yarn
